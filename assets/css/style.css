@@ -1,0 +1,14 @@
+body{
+    background-image: url("../images/rl.jpg");
+    width:99%;
+}
+
+.title{
+    color: rgb(255, 255, 255);
+    font-size: 300%;
+    text-align: center;
+}
+
+.buttons{
+    text-align: center;
+}
