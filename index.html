@@ -9,15 +9,21 @@
 <body>
 
 	<div class='wrapper'>
+		<div id="Game">
 		<h1 class="title" id="main-title">Brad's Trivia</h1>
+		<p id="timeRemain" class="lead">Remaining Time: <span id="timer"></span></p>
+		<p id="question" class="lead"></p>
+	  </div>
+	  <div id="results">
+	  </div>
+	</div>
+
+		
 
 		<div class='buttons'>
 			<button type="button" class="btn btn-primary btn-sq-lg" id="start">Start!</button>
 		</div>
-		<br>
 
-		<div class='timer' id="secondsCountdown">Time Remaining : 0</div>
-		<br>
 
 		<div class='form' id='questions-container'></div>
 
@@ -25,7 +31,7 @@
 	
 	<div class='message' id='messageDiv'></div>
 	<div class='results'></div>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type='text/javascript' src='assets/javascript/app.js'></script>	
 </body>
 </html>
