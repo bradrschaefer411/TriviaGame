@@ -4,21 +4,25 @@
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/images/spore.png">
-	<title>Brad's Trivia</title>
+	<title>Brad's Mini-AP Pokemon Triva Exam</title>
 </head>
 <body>
 
 	<div class='wrapper'>
+		<h1 class="title" id="main-title">Brad's Trivia</h1>
 
-		<div class='title'>Brad's Trivia</div>
-		<div class='timer' id='timeLeft'></div>
+		<div class='buttons'>
+			<button type="button" class="btn btn-primary btn-sq-lg" id="start">Start!</button>
+		</div>
+		<br>
+
+		<div class='timer' id="secondsCountdown">Time Remaining : 0</div>
+		<br>
+
 		<div class='form' id='questions-container'></div>
 
-    </div>
-    
-    <div class='buttons'>
-        <button id='start'>Start!</button>
-    </div>
+	</div>
+	
 	<div class='message' id='messageDiv'></div>
 	<div class='results'></div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
