@@ -1,4 +1,13 @@
-var start = $("start");
+
+$(document).ready(function(){
+  
+    // event listeners
+    $("#timeRemain").hide();
+    $("#start").on('click', startGame);
+    $(document).on('click' , '.option', trivia.guessChecker);
+    
+  })
+  var start = $("start");
 var menu = $("#menu");
 var timeRemain = 30;
 function startTimer() {
@@ -20,6 +29,7 @@ function startTimer() {
           q4: 'How much damage does 2 layers of Spikes do to an opponent?',
           q5: 'Which of these type combinations has the most amount of double resistances?',
           q6: 'Which of these moves has the highest priority?'
+          q7: 'In Generation I, if a Sandslash uses Sword Dance 3 times and then uses Slash on a Snorlax, how much damage will it do?'
         },
         options: {
           q1: ['Ice', 'Fire', 'Water', 'Steel'],
@@ -28,6 +38,7 @@ function startTimer() {
           q4: ['12.5%', '21.2%', '25%', '16.67%'],
           q5: ['Water/Dragon','Electric/Steel','Steel/Flying','Fire/Steel'],
           q6: ['Vacuum Wave', 'Vital Throw', 'Ally Switch', 'Baby-Doll Eyes']
+          q7: ['24.4 - 28.8%', '83.5 - 98.2%', '80.4 - 94.6%', '26.9 - 31.7%']
         },
         answers: {
           q1: 'Ice',
@@ -35,7 +46,8 @@ function startTimer() {
           q3: '58.8 - 70.2%',
           q4: '16.67%',
           q5: 'Fire/Steel',
-          q6: 'Ally Switch'
+          q6: 'Ally Switch',
+          q7: '24.4 - 28.8%'
         }
 }
 //calls start Game function
@@ -46,11 +58,7 @@ startGame();
 function startGame() {
     timeRemain = 30;
     CountdownInSeconds();
-    updateTotalScore();
-    updateWinsTotal();
-    updateLossesTotal();
-    mineralPoints(1, 12);
-    totalScore = 0;
+
 }
 //function to countdown in seconds 
 function countdownInSeconds() {
