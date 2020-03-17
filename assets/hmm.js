@@ -1,24 +1,12 @@
 $("#timeRemain").hide();
 $("#start").on('click', function(){startTimer()});
-// $(document).on('click' , '.option', Questions.guessChecker);
+$(document).on('click' , '.option', Questions.guessChecker);
 
-function renderquestions() {
-    $("#Questions").empty();
-    for (var i = 0; i < Questions.length; i++) {
-        var containment = $("<div>");
-        containment.attr("data-name", Questions[i]);
-        containment.text(Questions[i]);
-        $("#Questions").append(containment);
-      }
-    
-}
 var timeRemain = 30;
 function startTimer() {
- renderquestions();
-    $("#start").hide();
-  $('#timeRemain').show();
+  $("#start").hide();
+  $('#timer').show();
   $('#Questions').show();
-}
 
 const Questions = [
     {
@@ -80,5 +68,4 @@ const Questions = [
         }
     },
 
-
-]
+  ]};
