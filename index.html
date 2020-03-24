@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/images/db.png">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="icon" href="assets/images/db.png">
 	<title>Brad's Mini-AP Pokemon Triva Exam</title>
 </head>
+
 <body>
 
 	<div class='wrapper'>
 		<div id="Game">
-		<h1 class="title" id="main-title">Brad's Mini-AP Pokemon Triva Exam</h1>
-		<p id="timeRemain" class="lead">Remaining Time: <span id="timer"></span></p>
-		<div id="Questions" class="lead">
-			
+			<h1 class="title" id="main-title">Brad's Mini-AP Pokemon Triva Exam</h1>
+			<p id="timeRemain" class="lead">Remaining Time: <span id="timer"></span></p>
+			<div id="stopWatch">200</div>
+			<div id="Questions" class="lead">
+				<br>
+				<div id="Answers"></div>
+			</div>
+
+
+			<div class='buttons'>
+				<button type="button" class="btn btn-primary btn-sq-lg" id="start">Start!</button>
+				<button type="button" class="btn btn-primary btn sq-lg" id="submit">Submit!</button>
+			</div>
+
 		</div>
-	  </div>
-	  <div id="results">
-	  </div>
-	</div>
 
-		
-
-		<div class='buttons'>
-			<button type="button" class="btn btn-primary btn-sq-lg" id="start">Start!</button>
+		<div class='message' id='messageDiv'></div>
+		<div id='results'>
+			<p>Correct: </p>
+			<p>Incorrect: </p>
+			<p>Unanswered: </p>
 		</div>
-
-		<div class="row">
-			<div id="choices" class="text-center">
-			  <div id="options">
-				
-			  </div>
-
-
-		<div class='form' id='questions-container'></div>
-
 	</div>
-	
-	<div class='message' id='messageDiv'></div>
-	<div class='results'></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type='text/javascript' src='assets/javascript/app.js'></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type='text/javascript' src='assets/javascript/app.js'></script>
 </body>
+
 </html>

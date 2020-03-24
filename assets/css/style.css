@@ -1,6 +1,6 @@
 body{
     background-image: url("../images/pkmn.jpg");
-    width:99%;
+    background-size: cover;
 }
 
 .title{
